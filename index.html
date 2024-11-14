@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <title>Flexisaf - week 8 - Deliverable/ ux design 8</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      color: inherit;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-theme-neutral-dark);
+      background: var(--dl-color-theme-neutral-light);
+
+      fill: var(--dl-color-theme-neutral-dark);
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+</head>
+
+<body>
+  <link rel="stylesheet" href="./style.css" />
+  <div>
+    <link href="./index.css" rel="stylesheet" />
+
+    <div class="desktop1-container">
+      <div class="desktop1-desktop1">
+        <div class="desktop1-frame113">
+          <div class="desktop1-frame112">
+            <div class="desktop1-frame107">
+              <span class="desktop1-text10">Furniture</span>
+            </div>
+            <div class="desktop1-frame108">
+              <span class="desktop1-text11">Shop</span>
+            </div>
+            <div class="desktop1-frame109">
+              <span class="desktop1-text12">E-Catalog</span>
+            </div>
+            <img src="public/external/logo2310-y7h8.svg" alt="logo2310" class="desktop1-logo" />
+            <div class="desktop1-frame110">
+              <span class="desktop1-text13">Showroom</span>
+            </div>
+            <div class="desktop1-frame111">
+              <span class="desktop1-text14">MY ACCOUNT</span>
+            </div>
+            <img src="public/external/marketeqfavourite2311-j3g.svg" alt="marketeqfavourite2311"
+              class="desktop1-marketeqfavourite" />
+            <img src="public/external/mdilightcart2311-pxpu.svg" alt="mdilightcart2311" class="desktop1-mdilightcart" />
+            <div class="desktop1-frame141">
+              <input class="desktop1-materialsymbolslightsearch" type="text" placeholder="search..." id="myInput" onkeyup="myFunction()" title="Type in name" required>
+            </div>
+          </div>
+        </div>
+        <div class="desktop1-frame157">
+          <div class="desktop1-frame156">
+            <div class="desktop1-frame155">
+              <div class="desktop1-frame131">
+                <div class="desktop1-frame126">
+                  <span class="desktop1-text15">FILTERS</span>
+                </div>
+              </div>
+              <div class="desktop1-frame149">
+                <div class="desktop1-frame137">
+                  <div class="desktop1-frame1291">
+                    <span class="desktop1-text16">BRAND</span>
+                  </div>
+                  <img src="public/external/riarrowdropupline2320-5tyg.svg" alt="riarrowdropupline2320"
+                    class="desktop1-riarrowdropupline1" />
+                </div>
+                <div class="desktop1-frame127">
+                  <div class="desktop1-frame55">
+                    <div class="desktop1-component21">
+                      <input type="checkbox" name="furniture" value="chair"
+                        class="desktop1-rectangle61" />
+                    </div>
+                    <label class="desktop1-text17">Steelcase</label>
+                  </div>
+                  <div class="desktop1-frame56">
+                    <div class="desktop1-component22">
+                      <input  type="checkbox" name="furniture" value="chair"
+                        class="desktop1-rectangle62" />
+                      
+                    </div>
+                    <label class="desktop1-text18">Wycian</label>
+                  </div>
+                  <div class="desktop1-frame58">
+                    <div class="desktop1-component23">
+                      <input  type="checkbox" name="furniture" value="chair"
+                        class="desktop1-rectangle63" />
+                      
+                    </div>
+                    <label class="desktop1-text19">Haworth</label>
+                  </div>
+                  <div class="desktop1-frame60">
+                    <div class="desktop1-component24">
+                      <input  type="checkbox" name="furniture" value="chair"
+                        class="desktop1-rectangle64" />
+                    </div>
+                    <label class="desktop1-text20">Herman Miller</label>
+                  </div>
+                  <div class="desktop1-frame61">
+                    <div class="desktop1-component25">
+                      <input  type="checkbox" name="furniture" value="chair"
+                        class="desktop1-rectangle65" />
+                    </div>
+                    <label class="desktop1-text21">Razer</label>
+                  </div>
+                  <div class="desktop1-frame62">
+                    <div class="desktop1-component26">
+                      <input  type="checkbox" name="furniture" value="chair"
+                        class="desktop1-rectangle66" />
+                    </div>
+                    <label class="desktop1-text22">Branch Furniture</label>
+                  </div>
+                </div>
+              </div>
+              <div class="desktop1-frame148">
+                <div class="desktop1-frame138">
+                  <div class="desktop1-frame1292">
+                    <span class="desktop1-text23">Stock status</span>
+                  </div>
+                 
+                </div>
+                <form class="desktop1-frame147">
+                  <div class="desktop1-frame144"> 
+                    <div class="desktop1-component26">
+                      <input class="desktop1-ellipse2" type="radio" id="sale" name="status" value="On Sale">
+                    </div>
+                      <span class="desktop1-text24">
+                        <label for="sale">On Sale</label>
+                      </span>
+                  </div>
+                  <div class="desktop1-frame146">
+                    <div class="desktop1-component26">
+                     <input class="desktop1-ellipse2" type="radio" id="stock" name="status" value="In Stock">
+                    </div>
+
+                    <span class="desktop1-text25">
+                      <label  for="stock"> In Stock</label>
+
+                     </span>
+                  </div>
+                </form>
+              </div>
+              <div class="desktop1-frame139">
+                <div class="desktop1-frame1293">
+                  <span class="desktop1-text26">Additional Information</span>
+                </div>
+                <img src="public/external/riarrowdropdownline2320-8dda.svg" alt="riarrowdropdownline2320"
+                  class="desktop1-riarrowdropdownline" />
+              </div>
+              <div class="desktop1-frame150">
+                <div class="desktop1-frame1294">
+                  <span class="desktop1-text27">Filter by price</span>
+                </div>
+              </div>
+              <div class="desktop1-frame154">
+                <div class="desktop1-frame153">
+                  <span class="desktop1-text28">
+                    <span class="desktop1-text29">Price:&nbsp;</span>
+                    <span>₦2,800&nbsp;—&nbsp;₦18,287,500</span>
+                  </span>
+                </div>
+                <div class="desktop1-frame151">
+                  <span ?>
+                    <a href="#" class="desktop1-text31">Filter</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="desktop1-frame13">
+              <a href="#" class="desktop1-text32">SHOW 12 RESULTS</a>
+            </div>
+          </div>
+          <div class="desktop1-frame140">
+            <div class="desktop1-frame125">
+              <div class="desktop1-frame115">
+                <span class="desktop1-text33">
+                  Wycian Sofa Chairs, Dark Gray Patio Chair Cushions Solid
+                  Wood Button-Tufted Back Seat Height 18.5" for Living Room
+                  Bedroom Dining Rooms Garden 1PC
+                </span>
+                <div class="desktop1-frame123">
+                  <span class="desktop1-text34">Price:£25 </span>
+                </div>
+                <div class="desktop1-frame114">
+                  <span class="desktop1-text36">Brand: Wycian</span>
+                </div>
+              </div>
+              <div class="desktop1-frame116">
+                <span class="desktop1-text37">
+                  This item cannot be shipped to your selected delivery
+                  location.<br>
+                  Please choose a different delivery location.
+                </span>
+              </div>
+              <div class="desktop1-frame122">
+                <div class="desktop1-frame117">
+                  <span class="desktop1-text38">Brand</span>
+                  <span class="desktop1-text39">Wycian</span>
+                </div>
+                <div class="desktop1-frame118">
+                  <span class="desktop1-text40">Color</span>
+                  <span class="desktop1-text41">Teal</span>
+                </div>
+                <div class="desktop1-frame119">
+                  <span class="desktop1-text42">
+                    <span>Product</span>
+                    <br />
+                    <span>Dimension</span>
+                  </span>
+                  <span class="desktop1-text46">27.5"D x 22.5"W x 33"H</span>
+                </div>
+                <div class="desktop1-frame120">
+                  <span class="desktop1-text47">Pattern</span>
+                  <span class="desktop1-text48">Solid</span>
+                </div>
+                <div class="desktop1-frame121">
+                  <span class="desktop1-text49">Manufacturer</span>
+                  <span class="desktop1-text50">Wycian</span>
+                </div>
+              </div>
+              <div class="desktop1-frame29">
+                <div class="desktop1-sub">
+                  <button class="button-option">+</button>
+                  </div>
+                <div class="desktop1-frame28">
+                  <button class="button-option1">2</button></div>
+                <div class="desktop1-add">
+                  <button class="button-option">-</button>
+                </div>
+              </div>
+              <div class="desktop1-frame124">
+                <div class="desktop1-frame30">
+                  <a href="#" class="desktop1-text51">Add to cart</a>
+                </div>
+                <div class="desktop1-frame31">
+                  <a href="#" class="desktop1-text52">Buy Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="desktop1-frame133">
+              <img src="public/external/image122311-3jkl-500h.png" alt="image122311" class="desktop1-image12" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function myFunction(){
+
+    }
+  </script>
+</body>
+
+</html>
